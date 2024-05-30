@@ -42,12 +42,14 @@ body {
   
   .warn{
     background-color: rgb(255, 196, 0);
+    color: purple
   }
   
   .late{
     background-color: rgb(163, 11, 11);
+    color: white;
   }
-  
+
   .highlight {
     /* Add styles to highlight the lane */
     background-color: peachpuff;
