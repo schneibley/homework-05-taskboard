@@ -113,6 +113,11 @@ function handleAddTask(event){
 function handleDeleteTask(event){
     event.preventDefault();
     const taskId = $(this).closest('.task-card').attr('id')
+
+    taskList = taskList.filter(task => task.id !== taskId);
+
+    localStorage.setItem('tasks', JSON.stringify(taskList));
+    
        $(`#${taskId}`).remove();
 }
 
